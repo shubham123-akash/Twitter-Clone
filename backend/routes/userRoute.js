@@ -2,7 +2,6 @@ import express from "express";
 import { Login, Register, logout, bookmark, getMyProfile, getOtherUsers, follow, unfollow} from "../controllers/userController.js";
 import isAuthenticated from "../config/auth.js";
 
-
 const router = express.Router();
 
 router.route("/register").post(Register);

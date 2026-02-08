@@ -13,7 +13,6 @@ dotenv.config({
 databaseConnection();
 
 const app = express();
-
 // middlewares
 app.use(express.urlencoded({
     extended: true

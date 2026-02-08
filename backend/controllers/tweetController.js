@@ -92,4 +92,3 @@ export const getFollowingTweets = async (req,res) =>{
         console.log(error);
     }
 }
- 
