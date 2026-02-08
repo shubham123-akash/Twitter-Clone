@@ -3,8 +3,12 @@ import {USER_API_END_POINT} from "../utils/constant";
 import {useEffect} from "react";
 import { useDispatch } from "react-redux";
 import { getMyProfile, getOtherUsers } from "../redux/userSlice";
+
+
 const useOtherUsers = (id) => {
+
     const dispatch = useDispatch();
+    
     useEffect(() => {
         const fetchOtherUsers = async() => {
             try {
@@ -14,7 +18,7 @@ const useOtherUsers = (id) => {
             dispatch(getOtherUsers(res.data.otherUsers));
         } catch (error) {
             console.log(error);
-        }
+            }
         }
         fetchOtherUsers();
     },[])

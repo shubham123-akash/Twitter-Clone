@@ -13,7 +13,11 @@ import { getRefresh } from '../redux/tweetSlice';
 const Profile = () => {
     const {user, profile} = useSelector(strore=>strore.user);
     const {id} = useParams();
+
+    // get profile
     useGetProfile(id);
+
+
     const dispatch = useDispatch();
 
     const followAndUnfollowHandler = async() => {
@@ -76,7 +80,7 @@ const Profile = () => {
                 </div>
 
                 <div className='m-4 text-sm'>
-                    <p>🌐 Exploring the web's endless possibilities with MERN Stack 🚀 | Problem solver by day </p>
+                    <p>Exploring the web's endless possibilities with MERN Stack | Problem solver by day </p>
                 </div>
                 
             </div>

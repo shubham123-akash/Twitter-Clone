@@ -43,8 +43,8 @@ export default userSlice.reducer;
 
 // Other users (like for a followers list)
 
-// Want to update user data? 👉 Reducer does it.
+// Want to update user data? Reducer does it.
 
-// Want to clear the cart? 👉 Reducer handles it.
+// Want to clear the cart? Reducer handles it.
 
-// Want to change theme or settings? 👉 Reducer updates the state.
+// Want to change theme or settings? Reducer updates the state.

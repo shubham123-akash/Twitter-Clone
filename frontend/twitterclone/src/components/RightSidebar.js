@@ -4,7 +4,7 @@ import Avatar from "react-avatar";
 import { Link } from 'react-router-dom';
 
 
-const RightSidebar = (otherUsers) => {
+const RightSidebar = ({otherUsers}) => {
     return(
         <div className='w-[25%]'>
       <div className='flex items-center p-2 bg-gray-100 rounded-full outline-none w-full'>

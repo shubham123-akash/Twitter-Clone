@@ -16,6 +16,8 @@ const LeftSidebar = () => {
     const {user} = useSelector(strore=>strore.user);
     const navigate = useNavigate();
     const dispatch = useDispatch();
+    
+
     const logoutHandler = async() => {
         try {
             const res = await axios.get(`${USER_API_END_POINT}/logout`);
@@ -32,7 +34,7 @@ const LeftSidebar = () => {
         <div className='w-[20%]'>
             <div>
                 <div>
-                    <img className='ml-5' width="25px" src="https://img.freepik.com/free-vector/twitter-new-2023-x-logo-white-background-vector_1017-45422.jpg?semt=ais_hybrid&w=740" alt="twitter-logo" />
+                    <img className='ml-5' width="50px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf_gBfkpXSRRSzQ548l9sNzoEKoHYzNsBRngnKZrQmkaCXhDq6LJtZhwx_UO7oq-ixKBQ&usqp=CAU" alt="twitter-logo" />
                 </div>
                 <div className='my-4'>
 

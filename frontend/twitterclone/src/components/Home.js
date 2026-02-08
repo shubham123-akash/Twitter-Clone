@@ -8,8 +8,10 @@ import useOtherUsers from '../hooks/useOtherUsers';
 import useGetMyTweets from '../hooks/useGetMyTweets';
 
 const Home = () => {
+
     const {user, otherUsers} = useSelector(store=>store.user);
     const navigate = useNavigate();
+    
     useEffect(()=>{
         if(!user){
             navigate("/login");

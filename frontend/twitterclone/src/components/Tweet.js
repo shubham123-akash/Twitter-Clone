@@ -13,8 +13,8 @@ import {timeSince} from "../utils/constant";
 
 const Tweet = ({tweet}) => {
     const { user } = useSelector(store => store.user); 
-     
     const dispatch = useDispatch();
+
     const likeOrDislikeHandler = async (id) => {
         try {
             const res = await axios.put(`${TWEET_API_END_POINT}/like/${id}`, { id: user?._id }, {
@@ -29,6 +29,7 @@ const Tweet = ({tweet}) => {
             console.log(error);
         }
     }
+
     const deleteTweetHandler = async (id) => {
         try {
             axios.defaults.withCredentials = true;
